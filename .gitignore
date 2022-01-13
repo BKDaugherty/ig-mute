@@ -1,0 +1,8 @@
+*~
+package-lock.json
+node_modules/*
+.env
+mute_data*
+to_mute*
+account.json
+temp*

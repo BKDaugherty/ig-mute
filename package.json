@@ -1,0 +1,24 @@
+{
+  "name": "ig_mute",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "ig-mute": "index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^8.3.0",
+    "conf": "^10.1.1",
+    "dotenv": "^11.0.0",
+    "fs": "^0.0.1-security",
+    "instagram-private-api": "^1.45.2"
+  }
+}
