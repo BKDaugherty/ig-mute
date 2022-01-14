@@ -20,12 +20,13 @@ const mute = async () => {
   );
   const mute_user_ids = to_mute_users.map(({ pk }) => pk);
   for (const user_id of mute_user_ids) {
-    await wait_like_human();
+    await wait_like_human(90);
     await ig.friendship.mutePostsOrStoryFromFollow({
       mediaId: null,
       targetReelAuthorId: user_id,
       targetPostsAuthorId: user_id,
     });
+    console.log(`Successfully muted ${user_id}`);
   }
 };
 

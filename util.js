@@ -7,7 +7,7 @@ export const getAllItemsFromFeed = async (feed) => {
   return items;
 };
 
-export const wait_like_human = async () => {
-  const time = Math.round(Math.random() * 6000) + 1000;
+export const wait_like_human = async (max_seconds) => {
+  const time = Math.round(Math.random() * max_seconds * 1000) + 1000;
   await new Promise((resolve) => setTimeout(resolve, time));
 };

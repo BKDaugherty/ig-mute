@@ -16,7 +16,7 @@ const list = async () => {
     const mute_post = followee_data.muting;
     const data = `${followee.username}  ${mute_post}  ${mute_story}`;
     console.log(data);
-    await wait_like_human();
+    await wait_like_human(6);
   }
 };
 
